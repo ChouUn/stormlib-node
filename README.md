@@ -96,6 +96,16 @@ npm test
 
 The tests use Mocha as the test runner and Chai for assertions.
 
+## 📦 Packaging & Release Artifacts
+
+Generate the binary zip (for attaching to GitHub) and the npm tarball in one step:
+
+```
+npm run release:pack
+```
+
+This command rebuilds StormLib, recompiles the addon, executes the test suite, bundles the binaries into `dist/stormlib-node-v<version>-<platform>-<arch>.zip`, and runs `npm pack` into the same `dist/` folder. Upload both files as release assets when publishing on GitHub or npm.
+
 ## 🆕 What's New (v1.1.0)
 
 - ✅ Full Unicode path support on Windows, including MPQ archives and files stored in中文目录.
