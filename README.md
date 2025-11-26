@@ -67,7 +67,7 @@ To set up the project for development:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/sebyx07/stormlib-node.git
+   git clone https://github.com/qq200774491/stormlib-node.git
    cd stormlib-node
    ```
 
@@ -95,6 +95,12 @@ npm test
 ```
 
 The tests use Mocha as the test runner and Chai for assertions.
+
+## 🆕 What's New (v1.1.0)
+
+- ✅ Full Unicode path support on Windows, including MPQ archives and files stored in中文目录.
+- 🧪 Added regression tests that exercise Chinese directory/file names to prevent future regressions.
+- 🛠️ Improved StormLib compilation script with Visual Studio 2022 + `/MT` runtime enforcement for seamless node-gyp builds.
 
 ## 🤝 Contributing
 
